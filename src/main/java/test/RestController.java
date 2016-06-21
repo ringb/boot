@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @EnableAutoConfiguration
-public class SampleController {
+public class RestController {
 
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "ret";
+        return "return this!";
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(SampleController.class, args);
+        SpringApplication.run(RestController.class, args);
     }
 }
