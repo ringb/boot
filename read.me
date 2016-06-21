@@ -1,7 +1,10 @@
 see: https://spring.io/guides/gs/spring-boot/
 
+START APP - NO DOCKER
 - run locally with: mvn package && java -jar target/gs-spring-boot-0.1.0.jar
 
+
+- remove current docker machine if needed: docker-machine rm default
 - build docker: mvn package docker:build -e
 - run docker: docker run -p 8090:8090 -t springio/gs-spring-boot
 
